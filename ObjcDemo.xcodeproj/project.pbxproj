@@ -16,6 +16,9 @@
 		AA0E246B1E0B719100CFA947 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA0E24691E0B719100CFA947 /* LaunchScreen.storyboard */; };
 		AA1A4F9A1E11FE56002DFA22 /* UIViewController+Swizze.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1A4F991E11FE56002DFA22 /* UIViewController+Swizze.m */; };
 		AA1A4F9D1E1203FC002DFA22 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1A4F9C1E1203FC002DFA22 /* NextViewController.m */; };
+		AA1A4FA01E1266CF002DFA22 /* NSNull+Nullsafe.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1A4F9F1E1266CF002DFA22 /* NSNull+Nullsafe.m */; };
+		AA1A4FC91E135558002DFA22 /* NSString+invocation.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1A4FC81E135558002DFA22 /* NSString+invocation.m */; };
+		AA1A4FCC1E135BD3002DFA22 /* NSObject+invocation.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1A4FCB1E135BD3002DFA22 /* NSObject+invocation.m */; };
 		AAFB029B1E0CC33900A2A622 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AAFB029A1E0CC33900A2A622 /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +39,12 @@
 		AA1A4F991E11FE56002DFA22 /* UIViewController+Swizze.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Swizze.m"; sourceTree = "<group>"; };
 		AA1A4F9B1E1203FC002DFA22 /* NextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
 		AA1A4F9C1E1203FC002DFA22 /* NextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
+		AA1A4F9E1E1266CF002DFA22 /* NSNull+Nullsafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNull+Nullsafe.h"; sourceTree = "<group>"; };
+		AA1A4F9F1E1266CF002DFA22 /* NSNull+Nullsafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNull+Nullsafe.m"; sourceTree = "<group>"; };
+		AA1A4FC71E135558002DFA22 /* NSString+invocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+invocation.h"; sourceTree = "<group>"; };
+		AA1A4FC81E135558002DFA22 /* NSString+invocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+invocation.m"; sourceTree = "<group>"; };
+		AA1A4FCA1E135BD3002DFA22 /* NSObject+invocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+invocation.h"; sourceTree = "<group>"; };
+		AA1A4FCB1E135BD3002DFA22 /* NSObject+invocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+invocation.m"; sourceTree = "<group>"; };
 		AAFB029A1E0CC33900A2A622 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		F6B97333AC5D8A776FCA36BA /* Pods-ObjcDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjcDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObjcDemo/Pods-ObjcDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,6 +98,12 @@
 				AA0E24621E0B719100CFA947 /* ViewController.m */,
 				AA1A4F9B1E1203FC002DFA22 /* NextViewController.h */,
 				AA1A4F9C1E1203FC002DFA22 /* NextViewController.m */,
+				AA1A4FC71E135558002DFA22 /* NSString+invocation.h */,
+				AA1A4FC81E135558002DFA22 /* NSString+invocation.m */,
+				AA1A4FCA1E135BD3002DFA22 /* NSObject+invocation.h */,
+				AA1A4FCB1E135BD3002DFA22 /* NSObject+invocation.m */,
+				AA1A4F9E1E1266CF002DFA22 /* NSNull+Nullsafe.h */,
+				AA1A4F9F1E1266CF002DFA22 /* NSNull+Nullsafe.m */,
 				AA1A4F981E11FE56002DFA22 /* UIViewController+Swizze.h */,
 				AA1A4F991E11FE56002DFA22 /* UIViewController+Swizze.m */,
 				AA0E24641E0B719100CFA947 /* Main.storyboard */,
@@ -241,9 +256,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA1A4F9D1E1203FC002DFA22 /* NextViewController.m in Sources */,
+				AA1A4FA01E1266CF002DFA22 /* NSNull+Nullsafe.m in Sources */,
 				AA1A4F9A1E11FE56002DFA22 /* UIViewController+Swizze.m in Sources */,
 				AA0E24631E0B719100CFA947 /* ViewController.m in Sources */,
 				AA0E24601E0B719100CFA947 /* AppDelegate.m in Sources */,
+				AA1A4FCC1E135BD3002DFA22 /* NSObject+invocation.m in Sources */,
+				AA1A4FC91E135558002DFA22 /* NSString+invocation.m in Sources */,
 				AA0E245D1E0B719100CFA947 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
