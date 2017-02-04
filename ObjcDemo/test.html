@@ -1,0 +1,15 @@
+
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="width=device-width,initial-scale=1,user-scalable=no" name="viewport">
+<body>
+<script type="text/javascript">
+globalObject = new Object();
+globalObject.name = 100;
+globalObject.nativeCallJS = function (parameter) {
+    alert (parameter);
+};
+</script>
+<button type="button" onclick = "globalObject.jsCallNative('jsParameter')" style="width:100%; height:30px;"/>调用OC代码</button>
+</body>
+</html>

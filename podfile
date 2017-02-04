@@ -3,4 +3,5 @@ use_frameworks!
 target 'ObjcDemo' do
 pod 'FMDB'
 pod 'Masonry'
+pod 'ReactiveCocoa'
 end

@@ -19,6 +19,22 @@
 		AA1A4FA01E1266CF002DFA22 /* NSNull+Nullsafe.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1A4F9F1E1266CF002DFA22 /* NSNull+Nullsafe.m */; };
 		AA1A4FC91E135558002DFA22 /* NSString+invocation.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1A4FC81E135558002DFA22 /* NSString+invocation.m */; };
 		AA1A4FCC1E135BD3002DFA22 /* NSObject+invocation.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1A4FCB1E135BD3002DFA22 /* NSObject+invocation.m */; };
+		AA1A4FCE1E14AA80002DFA22 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = AA1A4FCD1E14AA80002DFA22 /* test.html */; };
+		AA1A4FD11E14AAF6002DFA22 /* JSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1A4FD01E14AAF6002DFA22 /* JSViewController.m */; };
+		AA1A4FD41E14BF8B002DFA22 /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1A4FD31E14BF8B002DFA22 /* WKWebViewController.m */; };
+		AA1A4FD61E14FD7C002DFA22 /* JavaScriptCore.html in Resources */ = {isa = PBXBuildFile; fileRef = AA1A4FD51E14FD7C002DFA22 /* JavaScriptCore.html */; };
+		AA1A4FD81E14FE15002DFA22 /* MessageHandler.html in Resources */ = {isa = PBXBuildFile; fileRef = AA1A4FD71E14FE15002DFA22 /* MessageHandler.html */; };
+		AA1A4FDB1E1505FC002DFA22 /* JSWebExport.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1A4FDA1E1505FC002DFA22 /* JSWebExport.m */; };
+		AA75E6471E31B31A00EF9B7B /* CircleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = AA75E6461E31B31A00EF9B7B /* CircleAnimation.m */; };
+		AA75E64A1E31B36E00EF9B7B /* CircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA75E6491E31B36E00EF9B7B /* CircleViewController.m */; };
+		AA75E64D1E32166300EF9B7B /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA75E64C1E32166300EF9B7B /* RootViewController.m */; };
+		AA75E6501E32166C00EF9B7B /* FisrtViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA75E64F1E32166C00EF9B7B /* FisrtViewController.m */; };
+		AA75E6531E32167200EF9B7B /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA75E6521E32167200EF9B7B /* SecondViewController.m */; };
+		AA75E6561E3218CE00EF9B7B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA75E6551E3218CE00EF9B7B /* LoginViewController.m */; };
+		AAF174A01E442DD6005048CC /* ProxyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF1749F1E442DD6005048CC /* ProxyViewController.m */; };
+		AAF174A31E44314C005048CC /* BookStore.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF174A21E44314C005048CC /* BookStore.m */; };
+		AAF174A61E44315D005048CC /* ClothesStore.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF174A51E44315D005048CC /* ClothesStore.m */; };
+		AAF174A91E443214005048CC /* TestProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF174A81E443214005048CC /* TestProxy.m */; };
 		AAFB029B1E0CC33900A2A622 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AAFB029A1E0CC33900A2A622 /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +61,35 @@
 		AA1A4FC81E135558002DFA22 /* NSString+invocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+invocation.m"; sourceTree = "<group>"; };
 		AA1A4FCA1E135BD3002DFA22 /* NSObject+invocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+invocation.h"; sourceTree = "<group>"; };
 		AA1A4FCB1E135BD3002DFA22 /* NSObject+invocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+invocation.m"; sourceTree = "<group>"; };
+		AA1A4FCD1E14AA80002DFA22 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+		AA1A4FCF1E14AAF6002DFA22 /* JSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSViewController.h; sourceTree = "<group>"; };
+		AA1A4FD01E14AAF6002DFA22 /* JSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSViewController.m; sourceTree = "<group>"; };
+		AA1A4FD21E14BF8B002DFA22 /* WKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewController.h; sourceTree = "<group>"; };
+		AA1A4FD31E14BF8B002DFA22 /* WKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
+		AA1A4FD51E14FD7C002DFA22 /* JavaScriptCore.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = JavaScriptCore.html; sourceTree = "<group>"; };
+		AA1A4FD71E14FE15002DFA22 /* MessageHandler.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = MessageHandler.html; sourceTree = "<group>"; };
+		AA1A4FD91E1505FC002DFA22 /* JSWebExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSWebExport.h; sourceTree = "<group>"; };
+		AA1A4FDA1E1505FC002DFA22 /* JSWebExport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSWebExport.m; sourceTree = "<group>"; };
+		AA75E6451E31B31A00EF9B7B /* CircleAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleAnimation.h; sourceTree = "<group>"; };
+		AA75E6461E31B31A00EF9B7B /* CircleAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleAnimation.m; sourceTree = "<group>"; };
+		AA75E6481E31B36E00EF9B7B /* CircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleViewController.h; sourceTree = "<group>"; };
+		AA75E6491E31B36E00EF9B7B /* CircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleViewController.m; sourceTree = "<group>"; };
+		AA75E64B1E32166300EF9B7B /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		AA75E64C1E32166300EF9B7B /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		AA75E64E1E32166C00EF9B7B /* FisrtViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FisrtViewController.h; sourceTree = "<group>"; };
+		AA75E64F1E32166C00EF9B7B /* FisrtViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FisrtViewController.m; sourceTree = "<group>"; };
+		AA75E6511E32167200EF9B7B /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		AA75E6521E32167200EF9B7B /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		AA75E6541E3218CE00EF9B7B /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		AA75E6551E3218CE00EF9B7B /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		AAF1749E1E442DD6005048CC /* ProxyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProxyViewController.h; sourceTree = "<group>"; };
+		AAF1749F1E442DD6005048CC /* ProxyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProxyViewController.m; sourceTree = "<group>"; };
+		AAF174A11E44314C005048CC /* BookStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookStore.h; sourceTree = "<group>"; };
+		AAF174A21E44314C005048CC /* BookStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookStore.m; sourceTree = "<group>"; };
+		AAF174A41E44315D005048CC /* ClothesStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClothesStore.h; sourceTree = "<group>"; };
+		AAF174A51E44315D005048CC /* ClothesStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClothesStore.m; sourceTree = "<group>"; };
+		AAF174A71E443214005048CC /* TestProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestProxy.h; sourceTree = "<group>"; };
+		AAF174A81E443214005048CC /* TestProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestProxy.m; sourceTree = "<group>"; };
 		AAFB029A1E0CC33900A2A622 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		F6B97333AC5D8A776FCA36BA /* Pods-ObjcDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjcDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObjcDemo/Pods-ObjcDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,6 +119,8 @@
 		AA0E244F1E0B719100CFA947 = {
 			isa = PBXGroup;
 			children = (
+				AAF1749D1E442DBD005048CC /* Example */,
+				AA75E6441E31B2EC00EF9B7B /* Animation */,
 				AA0E245A1E0B719100CFA947 /* ObjcDemo */,
 				AA0E24591E0B719100CFA947 /* Products */,
 				A5EC7E53ACD1FD4CBC5859CE /* Pods */,
@@ -94,8 +141,17 @@
 			children = (
 				AA0E245E1E0B719100CFA947 /* AppDelegate.h */,
 				AA0E245F1E0B719100CFA947 /* AppDelegate.m */,
+				AA1A4FCD1E14AA80002DFA22 /* test.html */,
+				AA1A4FD51E14FD7C002DFA22 /* JavaScriptCore.html */,
+				AA1A4FD71E14FE15002DFA22 /* MessageHandler.html */,
 				AA0E24611E0B719100CFA947 /* ViewController.h */,
 				AA0E24621E0B719100CFA947 /* ViewController.m */,
+				AA1A4FD21E14BF8B002DFA22 /* WKWebViewController.h */,
+				AA1A4FD31E14BF8B002DFA22 /* WKWebViewController.m */,
+				AA1A4FCF1E14AAF6002DFA22 /* JSViewController.h */,
+				AA1A4FD01E14AAF6002DFA22 /* JSViewController.m */,
+				AA1A4FD91E1505FC002DFA22 /* JSWebExport.h */,
+				AA1A4FDA1E1505FC002DFA22 /* JSWebExport.m */,
 				AA1A4F9B1E1203FC002DFA22 /* NextViewController.h */,
 				AA1A4F9C1E1203FC002DFA22 /* NextViewController.m */,
 				AA1A4FC71E135558002DFA22 /* NSString+invocation.h */,
@@ -121,6 +177,40 @@
 				AA0E245C1E0B719100CFA947 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AA75E6441E31B2EC00EF9B7B /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				AA75E6451E31B31A00EF9B7B /* CircleAnimation.h */,
+				AA75E6461E31B31A00EF9B7B /* CircleAnimation.m */,
+				AA75E6481E31B36E00EF9B7B /* CircleViewController.h */,
+				AA75E6491E31B36E00EF9B7B /* CircleViewController.m */,
+				AA75E64B1E32166300EF9B7B /* RootViewController.h */,
+				AA75E64C1E32166300EF9B7B /* RootViewController.m */,
+				AA75E64E1E32166C00EF9B7B /* FisrtViewController.h */,
+				AA75E64F1E32166C00EF9B7B /* FisrtViewController.m */,
+				AA75E6511E32167200EF9B7B /* SecondViewController.h */,
+				AA75E6521E32167200EF9B7B /* SecondViewController.m */,
+				AA75E6541E3218CE00EF9B7B /* LoginViewController.h */,
+				AA75E6551E3218CE00EF9B7B /* LoginViewController.m */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		AAF1749D1E442DBD005048CC /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				AAF1749E1E442DD6005048CC /* ProxyViewController.h */,
+				AAF1749F1E442DD6005048CC /* ProxyViewController.m */,
+				AAF174A11E44314C005048CC /* BookStore.h */,
+				AAF174A21E44314C005048CC /* BookStore.m */,
+				AAF174A41E44315D005048CC /* ClothesStore.h */,
+				AAF174A51E44315D005048CC /* ClothesStore.m */,
+				AAF174A71E443214005048CC /* TestProxy.h */,
+				AAF174A81E443214005048CC /* TestProxy.m */,
+			);
+			path = Example;
 			sourceTree = "<group>";
 		};
 		FCF79F4AF9E97E03D51C8A39 /* Frameworks */ = {
@@ -195,7 +285,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA0E246B1E0B719100CFA947 /* LaunchScreen.storyboard in Resources */,
+				AA1A4FD81E14FE15002DFA22 /* MessageHandler.html in Resources */,
+				AA1A4FD61E14FD7C002DFA22 /* JavaScriptCore.html in Resources */,
 				AA0E24681E0B719100CFA947 /* Assets.xcassets in Resources */,
+				AA1A4FCE1E14AA80002DFA22 /* test.html in Resources */,
 				AA0E24661E0B719100CFA947 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,12 +349,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA1A4F9D1E1203FC002DFA22 /* NextViewController.m in Sources */,
+				AAF174A01E442DD6005048CC /* ProxyViewController.m in Sources */,
+				AAF174A91E443214005048CC /* TestProxy.m in Sources */,
+				AA1A4FD11E14AAF6002DFA22 /* JSViewController.m in Sources */,
+				AA75E6471E31B31A00EF9B7B /* CircleAnimation.m in Sources */,
 				AA1A4FA01E1266CF002DFA22 /* NSNull+Nullsafe.m in Sources */,
+				AA1A4FDB1E1505FC002DFA22 /* JSWebExport.m in Sources */,
+				AAF174A31E44314C005048CC /* BookStore.m in Sources */,
 				AA1A4F9A1E11FE56002DFA22 /* UIViewController+Swizze.m in Sources */,
+				AAF174A61E44315D005048CC /* ClothesStore.m in Sources */,
 				AA0E24631E0B719100CFA947 /* ViewController.m in Sources */,
+				AA75E6561E3218CE00EF9B7B /* LoginViewController.m in Sources */,
+				AA1A4FD41E14BF8B002DFA22 /* WKWebViewController.m in Sources */,
+				AA75E64D1E32166300EF9B7B /* RootViewController.m in Sources */,
+				AA75E64A1E31B36E00EF9B7B /* CircleViewController.m in Sources */,
 				AA0E24601E0B719100CFA947 /* AppDelegate.m in Sources */,
 				AA1A4FCC1E135BD3002DFA22 /* NSObject+invocation.m in Sources */,
+				AA75E6531E32167200EF9B7B /* SecondViewController.m in Sources */,
 				AA1A4FC91E135558002DFA22 /* NSString+invocation.m in Sources */,
+				AA75E6501E32166C00EF9B7B /* FisrtViewController.m in Sources */,
 				AA0E245D1E0B719100CFA947 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

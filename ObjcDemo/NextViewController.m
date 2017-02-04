@@ -8,6 +8,7 @@
 
 #import "NextViewController.h"
 #import <Masonry/Masonry.h>
+#import "JSViewController.h"
 
 @interface NextViewController ()
 
@@ -23,7 +24,7 @@
     // Do any additional setup after loading the view.
     self.navigationItem.title = NSStringFromClass(self.class);
     self.view.backgroundColor = [UIColor whiteColor];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"action" style:UIBarButtonItemStylePlain target:self action:@selector(changeArgument)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"action" style:UIBarButtonItemStylePlain target:self action:@selector(gotoJSViewController)];
     
     NSArray *titles = @[@"改变参数", @"改变selector", @"改变target"];
     
@@ -42,6 +43,10 @@
     }
     
     [self createInvocation];
+}
+
+- (void)gotoJSViewController {
+    [self.navigationController pushViewController:[JSViewController new] animated:YES];
 }
 
 - (void)btnClick:(UIButton *)sender {
