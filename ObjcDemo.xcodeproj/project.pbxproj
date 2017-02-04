@@ -35,6 +35,7 @@
 		AAF174A31E44314C005048CC /* BookStore.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF174A21E44314C005048CC /* BookStore.m */; };
 		AAF174A61E44315D005048CC /* ClothesStore.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF174A51E44315D005048CC /* ClothesStore.m */; };
 		AAF174A91E443214005048CC /* TestProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF174A81E443214005048CC /* TestProxy.m */; };
+		AAF174AD1E456553005048CC /* ReactiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF174AC1E456553005048CC /* ReactiveViewController.m */; };
 		AAFB029B1E0CC33900A2A622 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AAFB029A1E0CC33900A2A622 /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +91,8 @@
 		AAF174A51E44315D005048CC /* ClothesStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClothesStore.m; sourceTree = "<group>"; };
 		AAF174A71E443214005048CC /* TestProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestProxy.h; sourceTree = "<group>"; };
 		AAF174A81E443214005048CC /* TestProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestProxy.m; sourceTree = "<group>"; };
+		AAF174AB1E456553005048CC /* ReactiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactiveViewController.h; sourceTree = "<group>"; };
+		AAF174AC1E456553005048CC /* ReactiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactiveViewController.m; sourceTree = "<group>"; };
 		AAFB029A1E0CC33900A2A622 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		F6B97333AC5D8A776FCA36BA /* Pods-ObjcDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjcDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObjcDemo/Pods-ObjcDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,6 +122,7 @@
 		AA0E244F1E0B719100CFA947 = {
 			isa = PBXGroup;
 			children = (
+				AAF174AA1E456535005048CC /* Reactive */,
 				AAF1749D1E442DBD005048CC /* Example */,
 				AA75E6441E31B2EC00EF9B7B /* Animation */,
 				AA0E245A1E0B719100CFA947 /* ObjcDemo */,
@@ -211,6 +215,15 @@
 				AAF174A81E443214005048CC /* TestProxy.m */,
 			);
 			path = Example;
+			sourceTree = "<group>";
+		};
+		AAF174AA1E456535005048CC /* Reactive */ = {
+			isa = PBXGroup;
+			children = (
+				AAF174AB1E456553005048CC /* ReactiveViewController.h */,
+				AAF174AC1E456553005048CC /* ReactiveViewController.m */,
+			);
+			path = Reactive;
 			sourceTree = "<group>";
 		};
 		FCF79F4AF9E97E03D51C8A39 /* Frameworks */ = {
@@ -369,6 +382,7 @@
 				AA1A4FC91E135558002DFA22 /* NSString+invocation.m in Sources */,
 				AA75E6501E32166C00EF9B7B /* FisrtViewController.m in Sources */,
 				AA0E245D1E0B719100CFA947 /* main.m in Sources */,
+				AAF174AD1E456553005048CC /* ReactiveViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

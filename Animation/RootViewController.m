@@ -9,6 +9,7 @@
 #import "RootViewController.h"
 #import "FisrtViewController.h"
 #import "ProxyViewController.h"
+#import "ReactiveViewController.h"
 
 @interface RootViewController ()
 
@@ -23,7 +24,7 @@
 }
 
 - (void)pushAction {
-    [self.navigationController pushViewController:[ProxyViewController new] animated:YES];
+    [self.navigationController pushViewController:[ReactiveViewController new] animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

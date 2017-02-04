@@ -3,5 +3,5 @@ use_frameworks!
 target 'ObjcDemo' do
 pod 'FMDB'
 pod 'Masonry'
-pod 'ReactiveCocoa'
+pod 'ReactiveCocoa','~>4.2.2'
 end
