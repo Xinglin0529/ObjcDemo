@@ -293,4 +293,19 @@
     }];
 }
 
+- (void)testRACSignal10 {
+    UITextField *field = UITextField.new;
+    [[field.rac_textSignal distinctUntilChanged] subscribeNext:^(id x) {
+        
+    }];
+    
+    [[field.rac_textSignal takeUntil:self.rac_willDeallocSignal] subscribeNext:^(id x) {
+        
+    }];
+    
+    [[field.rac_textSignal skip:1] subscribeNext:^(id x) {
+        
+    }];
+}
+
 @end

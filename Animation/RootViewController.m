@@ -73,6 +73,22 @@
         make.top.equalTo(textField.mas_bottom).offset(10);
         make.size.mas_equalTo(CGSizeMake(80, 40));
     }];
+    
+    RACSubject *sub = [self subject];
+    [sub subscribeNext:^(id x) {
+        content.text = x;
+    }];
+}
+
+- (RACSubject *)subject {
+    RACSubject *subject = [RACSubject subject];
+    [[[[RACSignal interval:2 onScheduler:[RACScheduler mainThreadScheduler]] take:1] map:^id(NSString *value) {
+        NSString *s = @"upperCaseString";
+        [subject sendNext:s];
+        [subject sendCompleted];
+        return nil;
+    }] subscribeNext:^(id x) {}];
+    return subject;
 }
 
 - (void)pushAction {
