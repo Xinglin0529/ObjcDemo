@@ -15,6 +15,8 @@
 
 @interface RootViewController ()
 
+@property (copy) NSMutableArray *dataArray;
+
 @end
 
 @implementation RootViewController
