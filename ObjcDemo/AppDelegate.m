@@ -11,6 +11,7 @@
 #import "ViewController.h"
 #import "CircleViewController.h"
 #import "RootViewController.h"
+#import "NavigationViewController.h"
 
 @interface AppDelegate ()
 
@@ -24,7 +25,7 @@
     [UIViewController swizze];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[RootViewController new]];
+    self.window.rootViewController = [[NavigationViewController alloc] initWithRootViewController:[RootViewController new]];
     [self.window makeKeyAndVisible];
     return YES;
 }

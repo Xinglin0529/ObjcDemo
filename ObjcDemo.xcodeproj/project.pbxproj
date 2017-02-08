@@ -31,6 +31,7 @@
 		AA75E6501E32166C00EF9B7B /* FisrtViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA75E64F1E32166C00EF9B7B /* FisrtViewController.m */; };
 		AA75E6531E32167200EF9B7B /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA75E6521E32167200EF9B7B /* SecondViewController.m */; };
 		AA75E6561E3218CE00EF9B7B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA75E6551E3218CE00EF9B7B /* LoginViewController.m */; };
+		AAE46A5B1E4B1BD5008A864E /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE46A5A1E4B1BD5008A864E /* NavigationViewController.m */; };
 		AAF174A01E442DD6005048CC /* ProxyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF1749F1E442DD6005048CC /* ProxyViewController.m */; };
 		AAF174A31E44314C005048CC /* BookStore.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF174A21E44314C005048CC /* BookStore.m */; };
 		AAF174A61E44315D005048CC /* ClothesStore.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF174A51E44315D005048CC /* ClothesStore.m */; };
@@ -83,6 +84,8 @@
 		AA75E6521E32167200EF9B7B /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		AA75E6541E3218CE00EF9B7B /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		AA75E6551E3218CE00EF9B7B /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		AAE46A591E4B1BD5008A864E /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
+		AAE46A5A1E4B1BD5008A864E /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
 		AAF1749E1E442DD6005048CC /* ProxyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProxyViewController.h; sourceTree = "<group>"; };
 		AAF1749F1E442DD6005048CC /* ProxyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProxyViewController.m; sourceTree = "<group>"; };
 		AAF174A11E44314C005048CC /* BookStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookStore.h; sourceTree = "<group>"; };
@@ -145,6 +148,8 @@
 			children = (
 				AA0E245E1E0B719100CFA947 /* AppDelegate.h */,
 				AA0E245F1E0B719100CFA947 /* AppDelegate.m */,
+				AAE46A591E4B1BD5008A864E /* NavigationViewController.h */,
+				AAE46A5A1E4B1BD5008A864E /* NavigationViewController.m */,
 				AA1A4FCD1E14AA80002DFA22 /* test.html */,
 				AA1A4FD51E14FD7C002DFA22 /* JavaScriptCore.html */,
 				AA1A4FD71E14FE15002DFA22 /* MessageHandler.html */,
@@ -379,6 +384,7 @@
 				AA0E24601E0B719100CFA947 /* AppDelegate.m in Sources */,
 				AA1A4FCC1E135BD3002DFA22 /* NSObject+invocation.m in Sources */,
 				AA75E6531E32167200EF9B7B /* SecondViewController.m in Sources */,
+				AAE46A5B1E4B1BD5008A864E /* NavigationViewController.m in Sources */,
 				AA1A4FC91E135558002DFA22 /* NSString+invocation.m in Sources */,
 				AA75E6501E32166C00EF9B7B /* FisrtViewController.m in Sources */,
 				AA0E245D1E0B719100CFA947 /* main.m in Sources */,
