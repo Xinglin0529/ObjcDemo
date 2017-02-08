@@ -31,6 +31,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.reactiveName = @"11111";
+    NSURLComponents *urlComponents;
 //    [self testRACSignal1];
 //    [self testRACSignal2];
 //    [self testRACSignal3];

@@ -44,10 +44,10 @@
     content.font = [UIFont systemFontOfSize:12];
     content.textAlignment = NSTextAlignmentLeft;
     [self.view addSubview:content];
-    [content mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.trailing.equalTo(textField);
-        make.top.equalTo(button.mas_bottom).offset(10);
-    }];
+//    [content mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.leading.trailing.equalTo(textField);
+//        make.top.equalTo(button.mas_bottom).offset(10);
+//    }];
     
     RAC(button, enabled) = [RACSignal combineLatest:@[textField.rac_textSignal] reduce:^id(NSString *text){
         return @(text.length > 0);
@@ -61,18 +61,34 @@
         NSLog(@"Observer value: %@", x);
     }];
     
-    [textField mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(self.view).offset(20);
-        make.trailing.equalTo(self.view).offset(-20);
-        make.top.equalTo(self.view).offset(100);
-        make.height.mas_equalTo(44);
-    }];
+    textField.translatesAutoresizingMaskIntoConstraints = NO;
+    button.translatesAutoresizingMaskIntoConstraints = NO;
+    content.translatesAutoresizingMaskIntoConstraints = NO;
     
-    [button mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.trailing.equalTo(textField);
-        make.top.equalTo(textField.mas_bottom).offset(10);
-        make.size.mas_equalTo(CGSizeMake(80, 40));
-    }];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:textField attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTop multiplier:1 constant:100]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:textField attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeft multiplier:1 constant:20]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:textField attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeRight multiplier:1 constant:-20]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:textField attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeHeight multiplier:0 constant:40]];
+    
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:button attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:textField attribute:NSLayoutAttributeBottom multiplier:1 constant:20]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:button attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeRight multiplier:1 constant:-20]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:textField attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeHeight multiplier:0 constant:40]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:textField attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeWidth multiplier:0 constant:80]];
+    
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:content attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:button attribute:NSLayoutAttributeBottom multiplier:1 constant:20]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:content attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeft multiplier:1 constant:20]];
+//    [textField mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.leading.equalTo(self.view).offset(20);
+//        make.trailing.equalTo(self.view).offset(-20);
+//        make.top.equalTo(self.view).offset(100);
+//        make.height.mas_equalTo(44);
+//    }];
+//    
+//    [button mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.trailing.equalTo(textField);
+//        make.top.equalTo(textField.mas_bottom).offset(10);
+//        make.size.mas_equalTo(CGSizeMake(80, 40));
+//    }];
     
     RACSubject *sub = [self subject];
     [sub subscribeNext:^(id x) {
