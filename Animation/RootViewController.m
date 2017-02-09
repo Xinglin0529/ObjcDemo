@@ -103,6 +103,19 @@
     [sub subscribeNext:^(id x) {
         content.text = x;
     }];
+    
+    [self testValist:@"name1", @"name2", @"name3", nil];
+}
+
+- (void)testValist:(NSString *)name,... {
+    va_list va;
+    va_start(va, name);
+    NSString *temp = name;
+    while (temp != nil) {
+        NSLog(@"tempValue-------------%@", temp);
+        temp = va_arg(va, NSString *);
+    }
+    va_end(va);
 }
 
 - (RACSubject *)subject {
