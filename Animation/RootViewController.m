@@ -13,6 +13,7 @@
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import <Masonry/Masonry.h>
 #import "Reactive.h"
+#import "IGCollectionViewController.h"
 
 @interface RootViewController ()
 
@@ -131,12 +132,13 @@
 }
 
 - (void)pushAction {
-    ReactiveViewController *react = [ReactiveViewController new];
-    react.subjectDelegate = [RACSubject subject];
-    [react.subjectDelegate subscribeNext:^(id x) {
-        NSLog(@"x------------- %@", x);
-    }];
-    [self.navigationController pushViewController:react animated:YES];
+//    ReactiveViewController *react = [ReactiveViewController new];
+//    react.subjectDelegate = [RACSubject subject];
+//    [react.subjectDelegate subscribeNext:^(id x) {
+//        NSLog(@"x------------- %@", x);
+//    }];
+    IGCollectionViewController *ig = [IGCollectionViewController new];
+    [self.navigationController pushViewController:ig animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -33,6 +33,9 @@
 		AA75E6561E3218CE00EF9B7B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA75E6551E3218CE00EF9B7B /* LoginViewController.m */; };
 		AAE46A5B1E4B1BD5008A864E /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE46A5A1E4B1BD5008A864E /* NavigationViewController.m */; };
 		AAE46A5E1E4D543F008A864E /* Reactive.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE46A5D1E4D543F008A864E /* Reactive.m */; };
+		AAE46A621E4D6537008A864E /* IGCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE46A611E4D6537008A864E /* IGCollectionViewController.m */; };
+		AAE46A651E4D84E3008A864E /* GridSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE46A641E4D84E3008A864E /* GridSectionController.m */; };
+		AAE46A681E4D958A008A864E /* TextSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE46A671E4D958A008A864E /* TextSectionController.m */; };
 		AAF174A01E442DD6005048CC /* ProxyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF1749F1E442DD6005048CC /* ProxyViewController.m */; };
 		AAF174A31E44314C005048CC /* BookStore.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF174A21E44314C005048CC /* BookStore.m */; };
 		AAF174A61E44315D005048CC /* ClothesStore.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF174A51E44315D005048CC /* ClothesStore.m */; };
@@ -89,6 +92,12 @@
 		AAE46A5A1E4B1BD5008A864E /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
 		AAE46A5C1E4D543F008A864E /* Reactive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reactive.h; sourceTree = "<group>"; };
 		AAE46A5D1E4D543F008A864E /* Reactive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reactive.m; sourceTree = "<group>"; };
+		AAE46A601E4D6537008A864E /* IGCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGCollectionViewController.h; sourceTree = "<group>"; };
+		AAE46A611E4D6537008A864E /* IGCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGCollectionViewController.m; sourceTree = "<group>"; };
+		AAE46A631E4D84E3008A864E /* GridSectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridSectionController.h; sourceTree = "<group>"; };
+		AAE46A641E4D84E3008A864E /* GridSectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridSectionController.m; sourceTree = "<group>"; };
+		AAE46A661E4D958A008A864E /* TextSectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextSectionController.h; sourceTree = "<group>"; };
+		AAE46A671E4D958A008A864E /* TextSectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextSectionController.m; sourceTree = "<group>"; };
 		AAF1749E1E442DD6005048CC /* ProxyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProxyViewController.h; sourceTree = "<group>"; };
 		AAF1749F1E442DD6005048CC /* ProxyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProxyViewController.m; sourceTree = "<group>"; };
 		AAF174A11E44314C005048CC /* BookStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookStore.h; sourceTree = "<group>"; };
@@ -214,6 +223,12 @@
 		AAE46A5F1E4D5D47008A864E /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				AAE46A601E4D6537008A864E /* IGCollectionViewController.h */,
+				AAE46A611E4D6537008A864E /* IGCollectionViewController.m */,
+				AAE46A631E4D84E3008A864E /* GridSectionController.h */,
+				AAE46A641E4D84E3008A864E /* GridSectionController.m */,
+				AAE46A661E4D958A008A864E /* TextSectionController.h */,
+				AAE46A671E4D958A008A864E /* TextSectionController.m */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -383,10 +398,12 @@
 				AAF174A01E442DD6005048CC /* ProxyViewController.m in Sources */,
 				AAF174A91E443214005048CC /* TestProxy.m in Sources */,
 				AA1A4FD11E14AAF6002DFA22 /* JSViewController.m in Sources */,
+				AAE46A621E4D6537008A864E /* IGCollectionViewController.m in Sources */,
 				AA75E6471E31B31A00EF9B7B /* CircleAnimation.m in Sources */,
 				AA1A4FA01E1266CF002DFA22 /* NSNull+Nullsafe.m in Sources */,
 				AA1A4FDB1E1505FC002DFA22 /* JSWebExport.m in Sources */,
 				AAF174A31E44314C005048CC /* BookStore.m in Sources */,
+				AAE46A651E4D84E3008A864E /* GridSectionController.m in Sources */,
 				AAE46A5E1E4D543F008A864E /* Reactive.m in Sources */,
 				AA1A4F9A1E11FE56002DFA22 /* UIViewController+Swizze.m in Sources */,
 				AAF174A61E44315D005048CC /* ClothesStore.m in Sources */,
@@ -396,6 +413,7 @@
 				AA75E64D1E32166300EF9B7B /* RootViewController.m in Sources */,
 				AA75E64A1E31B36E00EF9B7B /* CircleViewController.m in Sources */,
 				AA0E24601E0B719100CFA947 /* AppDelegate.m in Sources */,
+				AAE46A681E4D958A008A864E /* TextSectionController.m in Sources */,
 				AA1A4FCC1E135BD3002DFA22 /* NSObject+invocation.m in Sources */,
 				AA75E6531E32167200EF9B7B /* SecondViewController.m in Sources */,
 				AAE46A5B1E4B1BD5008A864E /* NavigationViewController.m in Sources */,
