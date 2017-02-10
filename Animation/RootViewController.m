@@ -142,8 +142,9 @@
 //    [react.subjectDelegate subscribeNext:^(id x) {
 //        NSLog(@"x------------- %@", x);
 //    }];
-    IGCollectionViewController *ig = [IGCollectionViewController new];
-    [self.navigationController pushViewController:ig animated:YES];
+//    IGCollectionViewController *ig = [IGCollectionViewController new];
+    FisrtViewController *first = [FisrtViewController new];
+    [self.navigationController pushViewController:first animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
