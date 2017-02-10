@@ -43,7 +43,12 @@
     [button setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
     [button setTitleColor:[UIColor grayColor] forState:UIControlStateDisabled];
     [[button rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
-        
+        NSString *regex = @"^[eE][mM][sS][0-9]{12}";
+        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
+        BOOL isValid = [predicate evaluateWithObject:textField.text];
+        if (isValid) {
+            NSLog(@"验证通过..............");
+        }
     }];
     [self.view addSubview:button];
     
