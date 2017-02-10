@@ -2,6 +2,7 @@ PODS:
   - FMDB (2.6.2):
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
+  - IGListKit (2.0.0)
   - Masonry (1.0.2)
   - ReactiveCocoa (4.2.2):
     - Result (~> 2.0)
@@ -9,15 +10,17 @@ PODS:
 
 DEPENDENCIES:
   - FMDB
+  - IGListKit (~> 2.0.0)
   - Masonry
   - ReactiveCocoa (~> 4.2.2)
 
 SPEC CHECKSUMS:
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  IGListKit: ee255e4e61865bc3e01ca96b690c5435c2887849
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   ReactiveCocoa: 72263e7ac0770c274617ccd345e01049d0ca38ae
   Result: 18e1a7597fbcca5923c565b40a25a98afafdee02
 
-PODFILE CHECKSUM: 1932c479b766f910f8ed840f41bdd4a7c4179a93
+PODFILE CHECKSUM: 24dd521ed14593e06f2c0c5c32b901d6bf15ad1c
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.1.1

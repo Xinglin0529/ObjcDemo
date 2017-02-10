@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>IGListKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Masonry.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,22 +42,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2440E452C11756E3A5D6793F260B72BE</key>
+		<key>3F469CBEDA68CD27C74CF24863BC5929</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>251BAD17812F7EBF6532EACF66F941C3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>3321F4CA64117023637064F29401E537</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>37591F55905AE46FF8A747AFBC104FB3</key>
+		<key>5F7872E5898635E1BCA808F36291E5C2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,22 +57,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C54E2EC364EE24547E53267C6CD4A6B2</key>
+		<key>C03A54BF325FA2E67AB887CEA379DE78</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D52144DE9D7255DE912490FF5A806573</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E776D5EEB70DF6FA8201B800A0F25FBB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FFE8282E3A1AD738389B04D05486569A</key>
+		<key>D96397F6138470823252F20E7D34391A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

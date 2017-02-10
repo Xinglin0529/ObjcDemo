@@ -128,6 +128,7 @@
 		AA0E244F1E0B719100CFA947 = {
 			isa = PBXGroup;
 			children = (
+				AAE46A5F1E4D5D47008A864E /* CollectionView */,
 				AAF174AA1E456535005048CC /* Reactive */,
 				AAF1749D1E442DBD005048CC /* Example */,
 				AA75E6441E31B2EC00EF9B7B /* Animation */,
@@ -208,6 +209,13 @@
 				AA75E6551E3218CE00EF9B7B /* LoginViewController.m */,
 			);
 			path = Animation;
+			sourceTree = "<group>";
+		};
+		AAE46A5F1E4D5D47008A864E /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CollectionView;
 			sourceTree = "<group>";
 		};
 		AAF1749D1E442DBD005048CC /* Example */ = {
