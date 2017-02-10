@@ -12,6 +12,7 @@
 #import "ReactiveViewController.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import <Masonry/Masonry.h>
+#import "Reactive.h"
 
 @interface RootViewController ()
 
