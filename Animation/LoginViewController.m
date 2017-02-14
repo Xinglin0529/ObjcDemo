@@ -8,6 +8,8 @@
 
 #import "LoginViewController.h"
 #import "SecondViewController.h"
+#import <objc/runtime.h>
+#import "FisrtViewController.h"
 
 @interface LoginViewController ()
 
@@ -37,6 +39,23 @@
     }
     [viewControllers removeObject:findvc];
     self.navigationController.viewControllers = viewControllers;
+}
+
+void otherFunction(id self, SEL cmd) {
+    NSLog(@"动态处理callLoginPage方法");
+}
+
++ (BOOL)resolveInstanceMethod:(SEL)sel {
+//    if ([NSStringFromSelector(sel) isEqualToString:@"callLoginPage"]) {
+//        class_addMethod([self class], sel, (IMP)otherFunction, "v@:");
+//        return YES;
+//    }
+//    return [super resolveInstanceMethod:sel];
+    return NO;
+}
+
+- (id)forwardingTargetForSelector:(SEL)aSelector {
+    return [FisrtViewController new];
 }
 
 - (void)didReceiveMemoryWarning {

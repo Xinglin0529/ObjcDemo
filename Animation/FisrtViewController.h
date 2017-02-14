@@ -10,4 +10,6 @@
 
 @interface FisrtViewController : UIViewController
 
+- (void)callLoginPage;
+
 @end

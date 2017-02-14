@@ -178,6 +178,10 @@
     [self.navigationController pushViewController:login animated:YES];
 }
 
+- (void)callLoginPage {
+    NSLog(@"message has been forwarding to fisrtViewController");
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

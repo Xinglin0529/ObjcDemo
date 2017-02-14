@@ -14,6 +14,7 @@
 #import <Masonry/Masonry.h>
 #import "Reactive.h"
 #import "IGCollectionViewController.h"
+#import "SecondViewController.h"
 
 typedef NS_ENUM(NSInteger, Direction) {
     DirectionUp,
@@ -150,8 +151,9 @@ typedef NS_ENUM(NSInteger, Direction) {
 //        NSLog(@"x------------- %@", x);
 //    }];
 //    IGCollectionViewController *ig = [IGCollectionViewController new];
-    FisrtViewController *first = [FisrtViewController new];
-    [self.navigationController pushViewController:first animated:YES];
+//    FisrtViewController *first = [FisrtViewController new];
+    SecondViewController *second = [SecondViewController new];
+    [self.navigationController pushViewController:second animated:YES];
 }
 
 - (void)testNetWork1 {
