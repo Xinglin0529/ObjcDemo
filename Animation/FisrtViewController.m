@@ -80,7 +80,8 @@
 //            NSLog(@"主线程任务");
 //        }];
 //    }];
-    
+    [self testMethod];
+    [self timerSource];
     [self judgeIsMainThread];
 }
 
@@ -109,6 +110,67 @@
         NSLog(@"thread start2, value--------::%ld",(long)self.number);
     }
     [self.lock unlock];
+}
+
+- (void)testMethod {
+//    NSTimer *timer = [NSTimer timerWithTimeInterval:1 repeats:YES block:^(NSTimer * _Nonnull timer) {
+//        NSLog(@"1111");
+//    }];
+//    [timer setFireDate:[NSDate date]];
+//    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+    
+//    typedef CF_OPTIONS(CFOptionFlags, CFRunLoopActivity) {
+//        kCFRunLoopEntry = (1UL << 0),   //即将进入Runloop
+//        kCFRunLoopBeforeTimers = (1UL << 1),    //即将处理NSTimer
+//        kCFRunLoopBeforeSources = (1UL << 2),   //即将处理Sources
+//        kCFRunLoopBeforeWaiting = (1UL << 5),   //即将进入休眠
+//        kCFRunLoopAfterWaiting = (1UL << 6),    //刚从休眠中唤醒
+//        kCFRunLoopExit = (1UL << 7),            //即将退出runloop
+//        kCFRunLoopAllActivities = 0x0FFFFFFFU   //所有状态改变
+//    };
+//    
+//    通过Observer监听RunLoop的状态，一旦监听到RunLoop即将进入睡眠等待状态，就释放自动释放池（kCFRunLoopBeforeWaiting）
+    CFRunLoopObserverRef observer = CFRunLoopObserverCreateWithHandler(CFAllocatorGetDefault(), kCFRunLoopAllActivities, YES, 0, ^(CFRunLoopObserverRef observer, CFRunLoopActivity activity) {
+        switch (activity) {
+                case kCFRunLoopEntry:
+                NSLog(@"runloop进入");
+                break;
+                case kCFRunLoopBeforeTimers:
+                NSLog(@"runloop要去处理timer");
+                break;
+                case kCFRunLoopBeforeSources:
+                NSLog(@"runloop要去处理Sources");
+                break;
+                case kCFRunLoopBeforeWaiting:
+                NSLog(@"runloop要睡觉了");
+                break;
+                case kCFRunLoopAfterWaiting:
+                NSLog(@"runloop醒来啦");
+                break;
+                
+                case kCFRunLoopExit:
+                NSLog(@"runloop退出");
+                break;
+            default:
+                break;
+        }
+    });
+    CFRunLoopAddObserver(CFRunLoopGetCurrent(), observer, kCFRunLoopDefaultMode);
+    CFRelease(observer);
+}
+
+- (void)timerSource {
+    static NSInteger number = 0;
+    dispatch_source_t timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0));
+    dispatch_source_set_timer(timer, DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC, 1 * NSEC_PER_SEC);
+    dispatch_source_set_event_handler(timer, ^{
+        NSLog(@"dispatch timer start: %ld", (long)number);
+        number++;
+        if (number == 20) {
+            dispatch_source_cancel(timer);
+        }
+    });
+    dispatch_resume(timer);
 }
 
 - (void)pushAction {

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1BE2A867A35EE47AF9C43606 /* Pods_ObjcDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA1B1897974C10C7DF308AC /* Pods_ObjcDemo.framework */; };
+		A21AB5F31E50402E00BB4FF5 /* QuartzCore.m in Sources */ = {isa = PBXBuildFile; fileRef = A21AB5F21E50402E00BB4FF5 /* QuartzCore.m */; };
 		AA0E245D1E0B719100CFA947 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0E245C1E0B719100CFA947 /* main.m */; };
 		AA0E24601E0B719100CFA947 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0E245F1E0B719100CFA947 /* AppDelegate.m */; };
 		AA0E24631E0B719100CFA947 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0E24621E0B719100CFA947 /* ViewController.m */; };
@@ -47,6 +48,8 @@
 /* Begin PBXFileReference section */
 		3FA1B1897974C10C7DF308AC /* Pods_ObjcDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjcDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F7540EA4AC8E0B8E7E1188A /* Pods-ObjcDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjcDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ObjcDemo/Pods-ObjcDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		A21AB5F11E50402E00BB4FF5 /* QuartzCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuartzCore.h; sourceTree = "<group>"; };
+		A21AB5F21E50402E00BB4FF5 /* QuartzCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuartzCore.m; sourceTree = "<group>"; };
 		AA0E24581E0B719100CFA947 /* ObjcDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjcDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA0E245C1E0B719100CFA947 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AA0E245E1E0B719100CFA947 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -206,6 +209,8 @@
 			children = (
 				AA75E6451E31B31A00EF9B7B /* CircleAnimation.h */,
 				AA75E6461E31B31A00EF9B7B /* CircleAnimation.m */,
+				A21AB5F11E50402E00BB4FF5 /* QuartzCore.h */,
+				A21AB5F21E50402E00BB4FF5 /* QuartzCore.m */,
 				AA75E6481E31B36E00EF9B7B /* CircleViewController.h */,
 				AA75E6491E31B36E00EF9B7B /* CircleViewController.m */,
 				AA75E64B1E32166300EF9B7B /* RootViewController.h */,
@@ -304,6 +309,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = MY2CY9936K;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -397,6 +407,7 @@
 				AA1A4F9D1E1203FC002DFA22 /* NextViewController.m in Sources */,
 				AAF174A01E442DD6005048CC /* ProxyViewController.m in Sources */,
 				AAF174A91E443214005048CC /* TestProxy.m in Sources */,
+				A21AB5F31E50402E00BB4FF5 /* QuartzCore.m in Sources */,
 				AA1A4FD11E14AAF6002DFA22 /* JSViewController.m in Sources */,
 				AAE46A621E4D6537008A864E /* IGCollectionViewController.m in Sources */,
 				AA75E6471E31B31A00EF9B7B /* CircleAnimation.m in Sources */,

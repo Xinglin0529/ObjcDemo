@@ -15,7 +15,14 @@
 #import "Reactive.h"
 #import "IGCollectionViewController.h"
 
-@interface RootViewController ()
+typedef NS_ENUM(NSInteger, Direction) {
+    DirectionUp,
+    DirectionDown,
+    DirectionLeft,
+    DirectionRight
+};
+
+@interface RootViewController () <NSURLSessionDownloadDelegate>
 
 @property (copy) NSMutableArray *dataArray;
 
@@ -145,6 +152,84 @@
 //    IGCollectionViewController *ig = [IGCollectionViewController new];
     FisrtViewController *first = [FisrtViewController new];
     [self.navigationController pushViewController:first animated:YES];
+}
+
+- (void)testNetWork1 {
+    NSURL *url = [NSURL URLWithString:@"http://bmob-cdn-8782.b0.upaiyun.com/2017/01/17/c6b6bb1640e9ae9e80b221c454c4e90d.jpg"];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    NSURLSession *session = [NSURLSession sharedSession];
+    NSURLSessionDownloadTask *task = [session downloadTaskWithRequest:request completionHandler:^(NSURL * _Nullable location, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        
+    }];
+    [task resume];
+}
+
+- (void)testNetwork2 {
+    NSURL *url = [NSURL URLWithString:@""];
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:self delegateQueue:[NSOperationQueue mainQueue]];
+    NSURLSessionDownloadTask *down = [session downloadTaskWithURL:url];
+    [down resume];
+    
+    [down cancelByProducingResumeData:^(NSData * _Nullable resumeData) {
+        
+    }];
+    
+    NSURLSessionDownloadTask *resume = [session downloadTaskWithResumeData:[NSData new]];
+    [resume resume];
+}
+
+- (void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)downloadTask didFinishDownloadingToURL:(NSURL *)location {
+    
+}
+
+- (void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)downloadTask didResumeAtOffset:(int64_t)fileOffset expectedTotalBytes:(int64_t)expectedTotalBytes {
+    
+}
+
+- (void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)downloadTask didWriteData:(int64_t)bytesWritten totalBytesWritten:(int64_t)totalBytesWritten totalBytesExpectedToWrite:(int64_t)totalBytesExpectedToWrite {
+    
+}
+
+- (UIImage *)rotateImage:(UIImage *)image direction:(Direction)direction {
+    void(^block)(CGContextRef context);
+    CGSize imageSize;
+    switch (direction) {
+            case DirectionDown:
+        {
+            imageSize = image.size;
+            block = ^(CGContextRef context) {
+                CGContextTranslateCTM(context, 0, imageSize.height);
+                CGContextScaleCTM(context, 1, -1);
+            };
+        }
+            break;
+            case DirectionLeft:
+        {
+            imageSize = CGSizeMake(imageSize.height, imageSize.width);
+            block = ^(CGContextRef context) {
+                CGContextRotateCTM(context, M_PI / 2);
+                CGContextTranslateCTM(context, -imageSize.height, imageSize.width);
+                CGContextScaleCTM(context, -1, 1);
+            };
+        }
+            break;
+            case DirectionRight:
+        {
+            imageSize = CGSizeMake(imageSize.height, imageSize.width);
+            block = ^(CGContextRef context) {
+                CGContextRotateCTM(context, -M_PI / 2);
+                CGContextScaleCTM(context, -1, 1);
+            };
+        }
+            break;
+        default:
+            break;
+    }
+    UIGraphicsBeginImageContextWithOptions(imageSize, NO, 0);
+    block(UIGraphicsGetCurrentContext());
+    CGContextDrawImage(UIGraphicsGetCurrentContext(), CGRectMake(0, 0, image.size.width, image.size.height), image.CGImage);
+    UIImage *result = UIGraphicsGetImageFromCurrentImageContext();
+    return result;
 }
 
 - (void)didReceiveMemoryWarning {
