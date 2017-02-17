@@ -70,4 +70,5 @@
     return _strokeAnimation;
 }
 
+
 @end

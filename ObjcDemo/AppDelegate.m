@@ -12,6 +12,7 @@
 #import "CircleViewController.h"
 #import "RootViewController.h"
 #import "NavigationViewController.h"
+#import "AutoreleaseObject.h"
 
 @interface AppDelegate ()
 
@@ -23,6 +24,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [UIViewController swizze];
+    [AutoreleaseObject new];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [[NavigationViewController alloc] initWithRootViewController:[RootViewController new]];
@@ -40,6 +42,10 @@
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    
+    [application beginBackgroundTaskWithExpirationHandler:^{
+        
+    }];
 }
 
 

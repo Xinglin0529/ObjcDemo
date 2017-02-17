@@ -41,7 +41,6 @@
             make.size.mas_equalTo(CGSizeMake(200, 40));
         }];
     }
-    
     [self createInvocation];
 }
 

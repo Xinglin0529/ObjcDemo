@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1BE2A867A35EE47AF9C43606 /* Pods_ObjcDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA1B1897974C10C7DF308AC /* Pods_ObjcDemo.framework */; };
 		A21AB5F31E50402E00BB4FF5 /* QuartzCore.m in Sources */ = {isa = PBXBuildFile; fileRef = A21AB5F21E50402E00BB4FF5 /* QuartzCore.m */; };
+		A21AB5F71E55457E00BB4FF5 /* AutoreleaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A21AB5F61E55457E00BB4FF5 /* AutoreleaseObject.m */; };
 		AA0E245D1E0B719100CFA947 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0E245C1E0B719100CFA947 /* main.m */; };
 		AA0E24601E0B719100CFA947 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0E245F1E0B719100CFA947 /* AppDelegate.m */; };
 		AA0E24631E0B719100CFA947 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0E24621E0B719100CFA947 /* ViewController.m */; };
@@ -50,6 +51,8 @@
 		7F7540EA4AC8E0B8E7E1188A /* Pods-ObjcDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjcDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ObjcDemo/Pods-ObjcDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		A21AB5F11E50402E00BB4FF5 /* QuartzCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuartzCore.h; sourceTree = "<group>"; };
 		A21AB5F21E50402E00BB4FF5 /* QuartzCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuartzCore.m; sourceTree = "<group>"; };
+		A21AB5F51E55457E00BB4FF5 /* AutoreleaseObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoreleaseObject.h; sourceTree = "<group>"; };
+		A21AB5F61E55457E00BB4FF5 /* AutoreleaseObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoreleaseObject.m; sourceTree = "<group>"; };
 		AA0E24581E0B719100CFA947 /* ObjcDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjcDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA0E245C1E0B719100CFA947 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AA0E245E1E0B719100CFA947 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -128,6 +131,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A21AB5F41E55456C00BB4FF5 /* AutoRelease */ = {
+			isa = PBXGroup;
+			children = (
+				A21AB5F51E55457E00BB4FF5 /* AutoreleaseObject.h */,
+				A21AB5F61E55457E00BB4FF5 /* AutoreleaseObject.m */,
+			);
+			path = AutoRelease;
+			sourceTree = "<group>";
+		};
 		A5EC7E53ACD1FD4CBC5859CE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +152,7 @@
 		AA0E244F1E0B719100CFA947 = {
 			isa = PBXGroup;
 			children = (
+				A21AB5F41E55456C00BB4FF5 /* AutoRelease */,
 				AAE46A5F1E4D5D47008A864E /* CollectionView */,
 				AAF174AA1E456535005048CC /* Reactive */,
 				AAF1749D1E442DBD005048CC /* Example */,
@@ -429,6 +442,7 @@
 				AA75E6531E32167200EF9B7B /* SecondViewController.m in Sources */,
 				AAE46A5B1E4B1BD5008A864E /* NavigationViewController.m in Sources */,
 				AA1A4FC91E135558002DFA22 /* NSString+invocation.m in Sources */,
+				A21AB5F71E55457E00BB4FF5 /* AutoreleaseObject.m in Sources */,
 				AA75E6501E32166C00EF9B7B /* FisrtViewController.m in Sources */,
 				AA0E245D1E0B719100CFA947 /* main.m in Sources */,
 				AAF174AD1E456553005048CC /* ReactiveViewController.m in Sources */,

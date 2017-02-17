@@ -26,6 +26,7 @@ typedef NS_ENUM(NSInteger, Direction) {
 @interface RootViewController () <NSURLSessionDownloadDelegate>
 
 @property (copy) NSMutableArray *dataArray;
+@property (nonatomic, assign) UIViewController *testAss;
 
 @end
 
@@ -120,6 +121,14 @@ typedef NS_ENUM(NSInteger, Direction) {
     }];
     
     [self testValist:@"name1", @"name2", @"name3", nil];
+    
+    self.testAss = self;
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        dispatch_sync(dispatch_get_main_queue(), ^{
+            NSLog(@"dispatch_syncdispatch_sync-----");
+        });
+    });
 }
 
 - (void)testValist:(NSString *)name,... {
@@ -127,10 +136,27 @@ typedef NS_ENUM(NSInteger, Direction) {
     va_start(va, name);
     NSString *temp = name;
     while (temp != nil) {
-        NSLog(@"tempValue-------------%@", temp);
+//        NSLog(@"tempValue-------------%@", temp);
         temp = va_arg(va, NSString *);
     }
     va_end(va);
+    
+    dispatch_queue_t queue = dispatch_queue_create("queueue", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_async(queue, ^{
+        NSLog(@"1111111111");
+    });
+    
+    dispatch_barrier_async(queue, ^{
+        NSLog(@"dispatch_barrier_async-------------------");
+    });
+    
+    dispatch_async(queue, ^{
+        NSLog(@"2222222222");
+    });
+    
+    dispatch_async(queue, ^{
+        NSLog(@"3333333333");
+    });
 }
 
 - (RACSubject *)subject {
