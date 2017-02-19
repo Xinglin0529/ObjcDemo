@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0820"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9369FE7A8BCBE39FC61D9CBC891CE316"
-               BuildableName = "Pods_ObjcDemo.framework"
-               BlueprintName = "Pods-ObjcDemo"
-               ReferencedContainer = "container:Pods.xcodeproj">
+               BlueprintIdentifier = "A21AB6011E59E1A900BB4FF5"
+               BuildableName = "ObjcDemo-iPad.app"
+               BlueprintName = "ObjcDemo-iPad"
+               ReferencedContainer = "container:ObjcDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,6 +29,15 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "A21AB6011E59E1A900BB4FF5"
+            BuildableName = "ObjcDemo-iPad.app"
+            BlueprintName = "ObjcDemo-iPad"
+            ReferencedContainer = "container:ObjcDemo.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -42,15 +51,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9369FE7A8BCBE39FC61D9CBC891CE316"
-            BuildableName = "Pods_ObjcDemo.framework"
-            BlueprintName = "Pods-ObjcDemo"
-            ReferencedContainer = "container:Pods.xcodeproj">
+            BlueprintIdentifier = "A21AB6011E59E1A900BB4FF5"
+            BuildableName = "ObjcDemo-iPad.app"
+            BlueprintName = "ObjcDemo-iPad"
+            ReferencedContainer = "container:ObjcDemo.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -60,6 +70,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "A21AB6011E59E1A900BB4FF5"
+            BuildableName = "ObjcDemo-iPad.app"
+            BlueprintName = "ObjcDemo-iPad"
+            ReferencedContainer = "container:ObjcDemo.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

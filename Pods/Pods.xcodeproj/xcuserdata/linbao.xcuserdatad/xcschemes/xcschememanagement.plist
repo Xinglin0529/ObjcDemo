@@ -13,91 +13,68 @@
 		</dict>
 		<key>IGListKit.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
-			<integer>6</integer>
+			<integer>2</integer>
 		</dict>
 		<key>Masonry.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<key>Pods-ObjcDemo.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>4</integer>
 		</dict>
 		<key>ReactiveCocoa.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>5</integer>
 		</dict>
 		<key>Result.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>6</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>23CF27B2BA6AC7125EFFEDA8C5AA819F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>2440E452C11756E3A5D6793F260B72BE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>251BAD17812F7EBF6532EACF66F941C3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>37591F55905AE46FF8A747AFBC104FB3</key>
+		<key>5787F9F7C1E42C00AC5E27A6AECF03F3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3F469CBEDA68CD27C74CF24863BC5929</key>
+		<key>9369FE7A8BCBE39FC61D9CBC891CE316</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5F7872E5898635E1BCA808F36291E5C2</key>
+		<key>9AEC01F815E9411BDF0C25F7BF4310F8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A9A83F63385AA43314397B8DD375464B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C03A54BF325FA2E67AB887CEA379DE78</key>
+		<key>9D781EB30AA915DF5F4DD7F2BB2A2CA3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>D52144DE9D7255DE912490FF5A806573</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D96397F6138470823252F20E7D34391A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E776D5EEB70DF6FA8201B800A0F25FBB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
