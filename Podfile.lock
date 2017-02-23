@@ -7,12 +7,14 @@ PODS:
   - ReactiveCocoa (4.2.2):
     - Result (~> 2.0)
   - Result (2.1.3)
+  - RFQuiltLayout (1.1.1)
 
 DEPENDENCIES:
   - FMDB
   - IGListKit (~> 2.0.0)
   - Masonry
   - ReactiveCocoa (~> 4.2.2)
+  - RFQuiltLayout
 
 SPEC CHECKSUMS:
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
@@ -20,7 +22,8 @@ SPEC CHECKSUMS:
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   ReactiveCocoa: 72263e7ac0770c274617ccd345e01049d0ca38ae
   Result: 18e1a7597fbcca5923c565b40a25a98afafdee02
+  RFQuiltLayout: aa28fc2d4a262fbca7caa43d9d8ef4b4726c8cd4
 
-PODFILE CHECKSUM: 24dd521ed14593e06f2c0c5c32b901d6bf15ad1c
+PODFILE CHECKSUM: 444a07249aa103b261ca3703966a823ef12b5b76
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.1.1

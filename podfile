@@ -5,4 +5,6 @@ pod 'FMDB'
 pod 'Masonry'
 pod 'ReactiveCocoa','~>4.2.2'
 pod 'IGListKit','~>2.0.0'
+pod 'RFQuiltLayout','~>1.1.1'
+
 end

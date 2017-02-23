@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '298940EA12A54BBF58C3529F435F7073'
-               BlueprintName = 'ReactiveCocoa'
+               BlueprintIdentifier = 'C0EB6791B532A7ABE8C9852D8A81B921'
+               BlueprintName = 'RFQuiltLayout'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'ReactiveCocoa.framework'>
+               BuildableName = 'RFQuiltLayout.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
