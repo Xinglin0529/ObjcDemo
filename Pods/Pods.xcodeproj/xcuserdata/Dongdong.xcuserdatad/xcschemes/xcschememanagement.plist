@@ -39,20 +39,35 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SocketRocket.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>WeexSDK.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>04DDA19EEC04B0FD189A4C9E0597FDA5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>10C8A7FE3AABFFD95D9CEC1B928185DF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>153408758F047290D1277D07F31C4C76</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>23CF27B2BA6AC7125EFFEDA8C5AA819F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>298940EA12A54BBF58C3529F435F7073</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>38038B62923F694D2FF05FCF3E144269</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -67,12 +82,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C0EB6791B532A7ABE8C9852D8A81B921</key>
+		<key>F714FAB2944E9393F5BCFCACC95CEB3B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C1397FA0DEFB0E82E2C553E07F580211</key>
+		<key>F8F7548A6F971E9DCD7C1EB0B5C2A58E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FE1E6EE270D2E118F8BB08CEFB182238</key>
 		<dict>
 			<key>primary</key>
 			<true/>
