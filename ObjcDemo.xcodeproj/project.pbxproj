@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1BE2A867A35EE47AF9C43606 /* Pods_ObjcDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA1B1897974C10C7DF308AC /* Pods_ObjcDemo.framework */; };
 		7B6AED99AF1DCBC6A37A0370 /* Pods_ObjcDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA1B1897974C10C7DF308AC /* Pods_ObjcDemo.framework */; };
+		883427D010173C88AEBF3351 /* Pods_ObjcDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA1B1897974C10C7DF308AC /* Pods_ObjcDemo.framework */; };
 		A21AB5F31E50402E00BB4FF5 /* QuartzCore.m in Sources */ = {isa = PBXBuildFile; fileRef = A21AB5F21E50402E00BB4FF5 /* QuartzCore.m */; };
 		A21AB5F71E55457E00BB4FF5 /* AutoreleaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A21AB5F61E55457E00BB4FF5 /* AutoreleaseObject.m */; };
 		A21AB6041E59E1A900BB4FF5 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1A4F9C1E1203FC002DFA22 /* NextViewController.m */; };
@@ -64,6 +65,9 @@
 		AA1A4FD61E14FD7C002DFA22 /* JavaScriptCore.html in Resources */ = {isa = PBXBuildFile; fileRef = AA1A4FD51E14FD7C002DFA22 /* JavaScriptCore.html */; };
 		AA1A4FD81E14FE15002DFA22 /* MessageHandler.html in Resources */ = {isa = PBXBuildFile; fileRef = AA1A4FD71E14FE15002DFA22 /* MessageHandler.html */; };
 		AA1A4FDB1E1505FC002DFA22 /* JSWebExport.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1A4FDA1E1505FC002DFA22 /* JSWebExport.m */; };
+		AA45CA3B1E5E8A8700FDFAFE /* RFQuiltLayoutCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA45CA3A1E5E8A8700FDFAFE /* RFQuiltLayoutCollectionViewCell.m */; };
+		AA45CA3F1E5EABEF00FDFAFE /* ComputedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AA45CA3E1E5EABEF00FDFAFE /* ComputedModel.m */; };
+		AA45CA421E60294200FDFAFE /* AlgorithmManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AA45CA411E60294200FDFAFE /* AlgorithmManager.m */; };
 		AA75E6471E31B31A00EF9B7B /* CircleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = AA75E6461E31B31A00EF9B7B /* CircleAnimation.m */; };
 		AA75E64A1E31B36E00EF9B7B /* CircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA75E6491E31B36E00EF9B7B /* CircleViewController.m */; };
 		AA75E64D1E32166300EF9B7B /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA75E64C1E32166300EF9B7B /* RootViewController.m */; };
@@ -86,6 +90,7 @@
 /* Begin PBXFileReference section */
 		1129E8D660EDEFA9CEA4B0C9 /* Pods-ObjcDemo.testdebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjcDemo.testdebug.xcconfig"; path = "Pods/Target Support Files/Pods-ObjcDemo/Pods-ObjcDemo.testdebug.xcconfig"; sourceTree = "<group>"; };
 		2410EDDFCE83CC0B6FAB95D1 /* Pods-ObjcDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjcDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObjcDemo/Pods-ObjcDemo.release.xcconfig"; sourceTree = "<group>"; };
+		168403ED326584E12CC5EBB0 /* Pods-ObjcDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjcDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObjcDemo/Pods-ObjcDemo.release.xcconfig"; sourceTree = "<group>"; };
 		3FA1B1897974C10C7DF308AC /* Pods_ObjcDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjcDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A21AB5F11E50402E00BB4FF5 /* QuartzCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuartzCore.h; sourceTree = "<group>"; };
 		A21AB5F21E50402E00BB4FF5 /* QuartzCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuartzCore.m; sourceTree = "<group>"; };
@@ -94,6 +99,7 @@
 		A21AB6301E59E1A900BB4FF5 /* ObjcDemo-iPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ObjcDemo-iPad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A21AB6321E59E1AA00BB4FF5 /* ObjcDemo copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ObjcDemo copy-Info.plist"; path = "/Users/dongdong/Desktop/Objective-C/ObjcDemo/ObjcDemo copy-Info.plist"; sourceTree = "<absolute>"; };
 		A6E5B12C6D1AAE230916B87B /* Pods-ObjcDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjcDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ObjcDemo/Pods-ObjcDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		A775CE6CB5731CFE99992E71 /* Pods-ObjcDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjcDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ObjcDemo/Pods-ObjcDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		AA0E24581E0B719100CFA947 /* ObjcDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjcDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA0E245C1E0B719100CFA947 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AA0E245E1E0B719100CFA947 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -123,6 +129,12 @@
 		AA1A4FD71E14FE15002DFA22 /* MessageHandler.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = MessageHandler.html; sourceTree = "<group>"; };
 		AA1A4FD91E1505FC002DFA22 /* JSWebExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSWebExport.h; sourceTree = "<group>"; };
 		AA1A4FDA1E1505FC002DFA22 /* JSWebExport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSWebExport.m; sourceTree = "<group>"; };
+		AA45CA391E5E8A8700FDFAFE /* RFQuiltLayoutCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFQuiltLayoutCollectionViewCell.h; sourceTree = "<group>"; };
+		AA45CA3A1E5E8A8700FDFAFE /* RFQuiltLayoutCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFQuiltLayoutCollectionViewCell.m; sourceTree = "<group>"; };
+		AA45CA3D1E5EABEF00FDFAFE /* ComputedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComputedModel.h; sourceTree = "<group>"; };
+		AA45CA3E1E5EABEF00FDFAFE /* ComputedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComputedModel.m; sourceTree = "<group>"; };
+		AA45CA401E60294200FDFAFE /* AlgorithmManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlgorithmManager.h; sourceTree = "<group>"; };
+		AA45CA411E60294200FDFAFE /* AlgorithmManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlgorithmManager.m; sourceTree = "<group>"; };
 		AA75E6451E31B31A00EF9B7B /* CircleAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleAnimation.h; sourceTree = "<group>"; };
 		AA75E6461E31B31A00EF9B7B /* CircleAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleAnimation.m; sourceTree = "<group>"; };
 		AA75E6481E31B36E00EF9B7B /* CircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleViewController.h; sourceTree = "<group>"; };
@@ -174,6 +186,7 @@
 				AAFB029B1E0CC33900A2A622 /* libsqlite3.tbd in Frameworks */,
 				1BE2A867A35EE47AF9C43606 /* Pods_ObjcDemo.framework in Frameworks */,
 				7B6AED99AF1DCBC6A37A0370 /* Pods_ObjcDemo.framework in Frameworks */,
+				883427D010173C88AEBF3351 /* Pods_ObjcDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +215,8 @@
 				1129E8D660EDEFA9CEA4B0C9 /* Pods-ObjcDemo.testdebug.xcconfig */,
 				A6E5B12C6D1AAE230916B87B /* Pods-ObjcDemo.debug.xcconfig */,
 				2410EDDFCE83CC0B6FAB95D1 /* Pods-ObjcDemo.release.xcconfig */,
+				A775CE6CB5731CFE99992E71 /* Pods-ObjcDemo.debug.xcconfig */,
+				168403ED326584E12CC5EBB0 /* Pods-ObjcDemo.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -209,6 +224,7 @@
 		AA0E244F1E0B719100CFA947 = {
 			isa = PBXGroup;
 			children = (
+				AA45CA3C1E5EABD700FDFAFE /* Computed */,
 				A21AB6311E59E1AA00BB4FF5 /* Resources-iPad */,
 				A21AB5F41E55456C00BB4FF5 /* AutoRelease */,
 				AAE46A5F1E4D5D47008A864E /* CollectionView */,
@@ -277,6 +293,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		AA45CA3C1E5EABD700FDFAFE /* Computed */ = {
+			isa = PBXGroup;
+			children = (
+				AA45CA3D1E5EABEF00FDFAFE /* ComputedModel.h */,
+				AA45CA3E1E5EABEF00FDFAFE /* ComputedModel.m */,
+				AA45CA401E60294200FDFAFE /* AlgorithmManager.h */,
+				AA45CA411E60294200FDFAFE /* AlgorithmManager.m */,
+			);
+			path = Computed;
+			sourceTree = "<group>";
+		};
 		AA75E6441E31B2EC00EF9B7B /* Animation */ = {
 			isa = PBXGroup;
 			children = (
@@ -294,6 +321,8 @@
 				AA75E6521E32167200EF9B7B /* SecondViewController.m */,
 				AA75E6541E3218CE00EF9B7B /* LoginViewController.h */,
 				AA75E6551E3218CE00EF9B7B /* LoginViewController.m */,
+				AA45CA391E5E8A8700FDFAFE /* RFQuiltLayoutCollectionViewCell.h */,
+				AA45CA3A1E5E8A8700FDFAFE /* RFQuiltLayoutCollectionViewCell.m */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -555,11 +584,14 @@
 				AAE46A621E4D6537008A864E /* IGCollectionViewController.m in Sources */,
 				AA75E6471E31B31A00EF9B7B /* CircleAnimation.m in Sources */,
 				AA1A4FA01E1266CF002DFA22 /* NSNull+Nullsafe.m in Sources */,
+				AA45CA3B1E5E8A8700FDFAFE /* RFQuiltLayoutCollectionViewCell.m in Sources */,
+				AA45CA3F1E5EABEF00FDFAFE /* ComputedModel.m in Sources */,
 				AA1A4FDB1E1505FC002DFA22 /* JSWebExport.m in Sources */,
 				AAF174A31E44314C005048CC /* BookStore.m in Sources */,
 				AAE46A651E4D84E3008A864E /* GridSectionController.m in Sources */,
 				AAE46A5E1E4D543F008A864E /* Reactive.m in Sources */,
 				AA1A4F9A1E11FE56002DFA22 /* UIViewController+Swizze.m in Sources */,
+				AA45CA421E60294200FDFAFE /* AlgorithmManager.m in Sources */,
 				AAF174A61E44315D005048CC /* ClothesStore.m in Sources */,
 				AA0E24631E0B719100CFA947 /* ViewController.m in Sources */,
 				AA75E6561E3218CE00EF9B7B /* LoginViewController.m in Sources */,
@@ -720,6 +752,7 @@
 		AA0E24701E0B719100CFA947 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A6E5B12C6D1AAE230916B87B /* Pods-ObjcDemo.debug.xcconfig */;
+			baseConfigurationReference = A775CE6CB5731CFE99992E71 /* Pods-ObjcDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MY2CY9936K;
@@ -733,6 +766,7 @@
 		AA0E24711E0B719100CFA947 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2410EDDFCE83CC0B6FAB95D1 /* Pods-ObjcDemo.release.xcconfig */;
+			baseConfigurationReference = 168403ED326584E12CC5EBB0 /* Pods-ObjcDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MY2CY9936K;
