@@ -66,6 +66,7 @@
 		AA1A4FDB1E1505FC002DFA22 /* JSWebExport.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1A4FDA1E1505FC002DFA22 /* JSWebExport.m */; };
 		AA45CA3B1E5E8A8700FDFAFE /* RFQuiltLayoutCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA45CA3A1E5E8A8700FDFAFE /* RFQuiltLayoutCollectionViewCell.m */; };
 		AA45CA3F1E5EABEF00FDFAFE /* ComputedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AA45CA3E1E5EABEF00FDFAFE /* ComputedModel.m */; };
+		AA45CA421E60294200FDFAFE /* AlgorithmManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AA45CA411E60294200FDFAFE /* AlgorithmManager.m */; };
 		AA75E6471E31B31A00EF9B7B /* CircleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = AA75E6461E31B31A00EF9B7B /* CircleAnimation.m */; };
 		AA75E64A1E31B36E00EF9B7B /* CircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA75E6491E31B36E00EF9B7B /* CircleViewController.m */; };
 		AA75E64D1E32166300EF9B7B /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA75E64C1E32166300EF9B7B /* RootViewController.m */; };
@@ -129,6 +130,8 @@
 		AA45CA3A1E5E8A8700FDFAFE /* RFQuiltLayoutCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFQuiltLayoutCollectionViewCell.m; sourceTree = "<group>"; };
 		AA45CA3D1E5EABEF00FDFAFE /* ComputedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComputedModel.h; sourceTree = "<group>"; };
 		AA45CA3E1E5EABEF00FDFAFE /* ComputedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComputedModel.m; sourceTree = "<group>"; };
+		AA45CA401E60294200FDFAFE /* AlgorithmManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlgorithmManager.h; sourceTree = "<group>"; };
+		AA45CA411E60294200FDFAFE /* AlgorithmManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlgorithmManager.m; sourceTree = "<group>"; };
 		AA75E6451E31B31A00EF9B7B /* CircleAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleAnimation.h; sourceTree = "<group>"; };
 		AA75E6461E31B31A00EF9B7B /* CircleAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleAnimation.m; sourceTree = "<group>"; };
 		AA75E6481E31B36E00EF9B7B /* CircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleViewController.h; sourceTree = "<group>"; };
@@ -289,6 +292,8 @@
 			children = (
 				AA45CA3D1E5EABEF00FDFAFE /* ComputedModel.h */,
 				AA45CA3E1E5EABEF00FDFAFE /* ComputedModel.m */,
+				AA45CA401E60294200FDFAFE /* AlgorithmManager.h */,
+				AA45CA411E60294200FDFAFE /* AlgorithmManager.m */,
 			);
 			path = Computed;
 			sourceTree = "<group>";
@@ -580,6 +585,7 @@
 				AAE46A651E4D84E3008A864E /* GridSectionController.m in Sources */,
 				AAE46A5E1E4D543F008A864E /* Reactive.m in Sources */,
 				AA1A4F9A1E11FE56002DFA22 /* UIViewController+Swizze.m in Sources */,
+				AA45CA421E60294200FDFAFE /* AlgorithmManager.m in Sources */,
 				AAF174A61E44315D005048CC /* ClothesStore.m in Sources */,
 				AA0E24631E0B719100CFA947 /* ViewController.m in Sources */,
 				AA75E6561E3218CE00EF9B7B /* LoginViewController.m in Sources */,

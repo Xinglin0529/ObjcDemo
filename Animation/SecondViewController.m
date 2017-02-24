@@ -86,12 +86,18 @@
     RFQuiltLayout *layout = [[RFQuiltLayout alloc] init];
     layout.blockPixels = CGSizeMake(100, 100);
     layout.delegate = self;
-    _collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout];
+    _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
     _collectionView.delegate = self;
     _collectionView.dataSource = self;
     _collectionView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:_collectionView];
     [_collectionView registerClass:[RFQuiltLayoutCollectionViewCell class] forCellWithReuseIdentifier:@"RFQuiltLayoutCollectionViewCell"];
+    _collectionView.translatesAutoresizingMaskIntoConstraints = NO;
+    NSLayoutConstraint *lay1 = [NSLayoutConstraint constraintWithItem:_collectionView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTop multiplier:1 constant:0];
+    NSLayoutConstraint *lay2 = [NSLayoutConstraint constraintWithItem:_collectionView attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeft multiplier:1 constant:0];
+    NSLayoutConstraint *lay3 = [NSLayoutConstraint constraintWithItem:_collectionView attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeRight multiplier:1 constant:0];
+    NSLayoutConstraint *lay4 = [NSLayoutConstraint constraintWithItem:_collectionView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeBottom multiplier:1 constant:0];
+    [self.view addConstraints:@[lay1, lay2, lay3, lay4]];
 }
 
 - (CGSize)blockSizeForItemAtIndexPath:(NSIndexPath *)indexPath {
