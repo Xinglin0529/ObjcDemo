@@ -29,9 +29,22 @@
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [[NavigationViewController alloc] initWithRootViewController:[RootViewController new]];
     [self.window makeKeyAndVisible];
+    [self sendRequest];
     return YES;
 }
 
+- (void)sendRequest {
+    NSURL *url = [NSURL URLWithString:@"https://api.douban.com/v2/book/1220562"];
+    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
+    NSURLSession *session = [NSURLSession sharedSession];
+    NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        NSError *errorMsg;
+//        NSString *str = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        id obj = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers | NSJSONReadingAllowFragments error:&errorMsg];
+        NSLog(@"%@---%@",obj, errorMsg);
+    }];
+    [task resume];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
