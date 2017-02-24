@@ -13,6 +13,7 @@
 #import "RootViewController.h"
 #import "NavigationViewController.h"
 #import "AutoreleaseObject.h"
+#import "ComputedModel.h"
 
 @interface AppDelegate ()
 
@@ -29,6 +30,9 @@
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [[NavigationViewController alloc] initWithRootViewController:[RootViewController new]];
     [self.window makeKeyAndVisible];
+    
+    ComputedModel *compute = [ComputedModel new];
+    [compute computed4];
     return YES;
 }
 

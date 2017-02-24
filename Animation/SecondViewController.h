@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@interface RFViewModel : NSObject
+
+@property (nonatomic, assign) CGFloat row;
+@property (nonatomic, assign) CGFloat colomn;
+@property (nonatomic, copy) NSString *title;
+
+@end
+
 @interface SecondViewController : UIViewController
 
 @end

@@ -64,6 +64,8 @@
 		AA1A4FD61E14FD7C002DFA22 /* JavaScriptCore.html in Resources */ = {isa = PBXBuildFile; fileRef = AA1A4FD51E14FD7C002DFA22 /* JavaScriptCore.html */; };
 		AA1A4FD81E14FE15002DFA22 /* MessageHandler.html in Resources */ = {isa = PBXBuildFile; fileRef = AA1A4FD71E14FE15002DFA22 /* MessageHandler.html */; };
 		AA1A4FDB1E1505FC002DFA22 /* JSWebExport.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1A4FDA1E1505FC002DFA22 /* JSWebExport.m */; };
+		AA45CA3B1E5E8A8700FDFAFE /* RFQuiltLayoutCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA45CA3A1E5E8A8700FDFAFE /* RFQuiltLayoutCollectionViewCell.m */; };
+		AA45CA3F1E5EABEF00FDFAFE /* ComputedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AA45CA3E1E5EABEF00FDFAFE /* ComputedModel.m */; };
 		AA75E6471E31B31A00EF9B7B /* CircleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = AA75E6461E31B31A00EF9B7B /* CircleAnimation.m */; };
 		AA75E64A1E31B36E00EF9B7B /* CircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA75E6491E31B36E00EF9B7B /* CircleViewController.m */; };
 		AA75E64D1E32166300EF9B7B /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA75E64C1E32166300EF9B7B /* RootViewController.m */; };
@@ -123,6 +125,10 @@
 		AA1A4FD71E14FE15002DFA22 /* MessageHandler.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = MessageHandler.html; sourceTree = "<group>"; };
 		AA1A4FD91E1505FC002DFA22 /* JSWebExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSWebExport.h; sourceTree = "<group>"; };
 		AA1A4FDA1E1505FC002DFA22 /* JSWebExport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSWebExport.m; sourceTree = "<group>"; };
+		AA45CA391E5E8A8700FDFAFE /* RFQuiltLayoutCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFQuiltLayoutCollectionViewCell.h; sourceTree = "<group>"; };
+		AA45CA3A1E5E8A8700FDFAFE /* RFQuiltLayoutCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFQuiltLayoutCollectionViewCell.m; sourceTree = "<group>"; };
+		AA45CA3D1E5EABEF00FDFAFE /* ComputedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComputedModel.h; sourceTree = "<group>"; };
+		AA45CA3E1E5EABEF00FDFAFE /* ComputedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComputedModel.m; sourceTree = "<group>"; };
 		AA75E6451E31B31A00EF9B7B /* CircleAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleAnimation.h; sourceTree = "<group>"; };
 		AA75E6461E31B31A00EF9B7B /* CircleAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleAnimation.m; sourceTree = "<group>"; };
 		AA75E6481E31B36E00EF9B7B /* CircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleViewController.h; sourceTree = "<group>"; };
@@ -209,6 +215,7 @@
 		AA0E244F1E0B719100CFA947 = {
 			isa = PBXGroup;
 			children = (
+				AA45CA3C1E5EABD700FDFAFE /* Computed */,
 				A21AB6311E59E1AA00BB4FF5 /* Resources-iPad */,
 				A21AB5F41E55456C00BB4FF5 /* AutoRelease */,
 				AAE46A5F1E4D5D47008A864E /* CollectionView */,
@@ -277,6 +284,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		AA45CA3C1E5EABD700FDFAFE /* Computed */ = {
+			isa = PBXGroup;
+			children = (
+				AA45CA3D1E5EABEF00FDFAFE /* ComputedModel.h */,
+				AA45CA3E1E5EABEF00FDFAFE /* ComputedModel.m */,
+			);
+			path = Computed;
+			sourceTree = "<group>";
+		};
 		AA75E6441E31B2EC00EF9B7B /* Animation */ = {
 			isa = PBXGroup;
 			children = (
@@ -294,6 +310,8 @@
 				AA75E6521E32167200EF9B7B /* SecondViewController.m */,
 				AA75E6541E3218CE00EF9B7B /* LoginViewController.h */,
 				AA75E6551E3218CE00EF9B7B /* LoginViewController.m */,
+				AA45CA391E5E8A8700FDFAFE /* RFQuiltLayoutCollectionViewCell.h */,
+				AA45CA3A1E5E8A8700FDFAFE /* RFQuiltLayoutCollectionViewCell.m */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -555,6 +573,8 @@
 				AAE46A621E4D6537008A864E /* IGCollectionViewController.m in Sources */,
 				AA75E6471E31B31A00EF9B7B /* CircleAnimation.m in Sources */,
 				AA1A4FA01E1266CF002DFA22 /* NSNull+Nullsafe.m in Sources */,
+				AA45CA3B1E5E8A8700FDFAFE /* RFQuiltLayoutCollectionViewCell.m in Sources */,
+				AA45CA3F1E5EABEF00FDFAFE /* ComputedModel.m in Sources */,
 				AA1A4FDB1E1505FC002DFA22 /* JSWebExport.m in Sources */,
 				AAF174A31E44314C005048CC /* BookStore.m in Sources */,
 				AAE46A651E4D84E3008A864E /* GridSectionController.m in Sources */,
