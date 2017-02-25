@@ -10,6 +10,14 @@
 
 @implementation ComputedModel
 
++ (void)load {
+    NSLog(@"--------------原始类调用load");
+}
+
++ (void)initialize {
+    NSLog(@"--------------原始类调用initialize");
+}
+
 ///冒泡
 - (void)computed1 {
     NSMutableArray *list = @[@3, @4, @8, @1, @7, @2, @5].mutableCopy;

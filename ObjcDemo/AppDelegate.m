@@ -31,7 +31,7 @@
     self.window.rootViewController = [[NavigationViewController alloc] initWithRootViewController:[RootViewController new]];
     [self.window makeKeyAndVisible];
     
-    [self sendRequest];
+//    [self sendRequest];
     
     ComputedModel *compute = [ComputedModel new];
     [compute computed4];
