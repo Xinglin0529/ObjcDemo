@@ -15,6 +15,8 @@
 #import "AutoreleaseObject.h"
 #import "ComputedModel.h"
 
+#import <WeexSDK/WeexSDK.h>
+
 @interface AppDelegate ()
 
 @end
@@ -26,6 +28,7 @@
     // Override point for customization after application launch.
     [UIViewController swizze];
     [AutoreleaseObject new];
+    
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [[NavigationViewController alloc] initWithRootViewController:[RootViewController new]];
